@@ -1,0 +1,83 @@
+.form
+  margin-top: 30px
+  +md(margin-top, 10px)
+
+  &__block
+    padding: 62px 100px
+    position: relative
+    background: linear-gradient(to right, #4C4C4C, #000000)
+    z-index: 1
+    +sm(padding, 35px 65px)
+    +xs(padding, 10px)
+
+    h4
+      color: #fff
+      margin-bottom: 10px
+
+    span
+      display: block
+      font-size: 16px
+      color: #fff
+      line-height: 26px
+
+  img
+    position: absolute
+    z-index: -1
+    top: -100px
+    right: -210px
+    overflow: hidden
+
+
+  &__content
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    margin-top: 40px
+    margin-bottom: 8px
+    +lg(flex-direction, column)
+
+    .button
+      width: 170px
+      color: #000
+      font-size: 18px
+      box-sizing: border-box
+      display: inline-block
+      border: none
+      +lg(margin-bottom, 20px)
+      +xs(font-size, 16px)
+      +xs(width, 100%)
+
+      &:hover
+        background: #712632
+
+      &::placeholder
+        color: #000
+        transition: text-indent 0.3s ease
+
+    .btn-red
+      width: 270px
+
+    .btn--sub
+      width: 270px
+      height: 55px
+      +sm(line-height, 18px)
+      +xs(font-size, 16px)
+      +xs(width, 100%)
+
+
+input:focus::-webkit-input-placeholder
+  text-indent: 700px
+  transition: text-indent 0.7s ease
+
+input:focus::-moz-placeholder
+    text-indent: 700px
+    transition: text-indent 0.7s ease
+
+input:focus:-moz-placeholder
+    text-indent: 700px
+    transition: text-indent 0.7s ease
+
+input:focus:-ms-input-placeholder
+    text-indent: 700px
+    transition: text-indent 0.7s ease
+

@@ -1,0 +1,52 @@
+.video
+  position: relative
+  margin-bottom: 145px
+
+  img
+    position: absolute
+    right: 0
+    top: 20%
+    z-index: -1
+
+  h2
+    margin-top: 107px
+    margin-bottom: 80px
+    font-size: 36px
+    line-height: 44px
+    text-align: center
+    letter-spacing: .7px
+    +md(margin-top, 0)
+    +md(margin-bottom, 0)
+  
+  &__content
+    +row-flex
+    justify-content: space-between
+
+  &__text
+    +col
+    +size(5)
+    +size-sm(12)
+    color: #000
+    position: relative
+
+    p
+      margin-bottom: 28px
+      font-size: 18px
+      line-height: 28px
+      +lg(font-size, 16px)
+      +md(margin-top, 10px)
+      +md(font-size, 14px)
+      +md(line-height, 22px)
+
+  &__box
+    +col
+    +size(7)
+    +size-sm(12)
+    height: 470px
+
+    iframe
+      background-color: #F3F3F3
+      padding: 14px
+      box-shadow: 0 0 50px rgba(0,0,0,.3)
+
+

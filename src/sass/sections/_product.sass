@@ -1,0 +1,124 @@
+.product
+
+  h2
+    padding-bottom: 23px
+    color: #000
+
+    +md(padding-bottom, 50px)
+    +sm(line-height, 20px)
+
+  .tabs
+    display: flex
+    justify-content: center
+    transition: all .5s
+    margin-bottom: 50px
+
+  .button
+    height: 55px
+    line-height: 55px
+    color: #000
+    border: 1px solid #000
+    background: 0 0
+    margin: 5px
+    transition: all .4s
+    &:hover
+      background: #000
+      color: #fff
+
+  &__items
+    display: none
+
+    &.active
+      display: inherit
+
+
+  &__item
+    +col
+    +size(12)
+    position: relative
+    margin-bottom: 125px
+
+    &:last-of-type
+      margin-bottom: 100px
+
+
+    h4
+      color: #000
+      margin-top: 40px
+      margin-bottom: 7px
+      font-weight: 700
+      +xs(margin-top, 60px)
+      +xs(margin-bottom, 20px)
+      +sm(font-size, 22px)
+
+    p
+      margin-bottom: 20px
+
+    .button
+      font-size: 18px
+      color: #fff
+      background-color: #000
+      box-sizing: border-box
+      height: 55px
+      max-width: 270px
+      margin-bottom: 35px
+      border-radius: 10px
+
+    .swiper-box
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      list-style: none
+      z-index: 1
+      overflow: hidden
+      padding: 15px
+
+
+    .swiper-slide
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      box-sizing: border-box
+      background-color: #F6F6F6
+      border-radius: 10px
+      box-shadow: 0 0 15px rgba(0,0,0,.5)
+
+
+      img
+        margin: -50px 10px 0
+        border-radius: 10px
+
+
+    .button-prev,
+    .button-next
+      display: inline-block
+      outline: none
+      width: 50px
+      height: 50px
+      cursor: pointer
+
+
+    .button-prev
+      background: url(/app/img/slider-buttons/prev.png) no-repeat
+      margin-right: 30px
+
+    .button-next
+      background: url(/app/img/slider-buttons/next.png) no-repeat
+
+    .swiper-button-disabled
+      filter: opacity(25%)
+
+
+.slider__btn
+  height: 70px
+  width: 170px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: -82px
+  left: 50%
+  transform: translateX(-50%)
+

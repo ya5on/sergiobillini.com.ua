@@ -1,0 +1,55 @@
+.about
+
+  h2
+    margin-top: 66px
+    margin-bottom: 10px
+    +md(margin-top, 0)
+    +md(margin-bottom, 0)
+    +md(padding-top, 55px)
+    +md(padding-bottom, 35px)
+
+  &__box
+    +row-flex
+    justify-content: space-between
+
+    &:nth-of-type(even)
+      padding-left: 100px
+
+      .about__text
+        padding-top: 105px
+
+
+  &__picture
+    +col
+    +size(6)
+    +size-sm(12)
+
+    img
+      max-width: initial
+
+
+  &__text
+    +col
+    +size(6)
+    +size-sm(12)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    color: #000
+
+    h5
+      font-weight: 700
+
+    br
+      +sm(display, none)
+
+    p
+      margin-top: 22px
+      margin-bottom: 41px
+      font-size: 18px
+      line-height: 28px
+      +lg(font-size, 16px)
+      +md(margin-top, 10px)
+      +md(font-size, 14px)
+      +md(line-height, 22px)
+
