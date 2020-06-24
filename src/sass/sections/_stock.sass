@@ -15,6 +15,7 @@
       left: 50%
       z-index: -1
       transform: translateX(-50%)
+      +md(display, none)
 
     &--2
       position: absolute
@@ -30,12 +31,17 @@
 
 
   &__items
-    +row-flex
+    display: flex
+    margin-right: -15px
+    margin-left: -15px
+    flex-wrap: nowrap
     justify-content: space-between
     color: #fff
     padding: 95px 0
     position: initial
     z-index: 1
+    +sm(flex-wrap, wrap)
+    +sm(justify-content, center)
 
 
   &__text
@@ -54,15 +60,19 @@
       font-size: 100px
       margin-bottom: 25px
       font-weight: 700
+      +xs(font-size, 80px)
 
     p
       margin-bottom: 75px
       font-size: 24px
+      +sm(margin-bottom, 25px)
 
       span
         font-weight: 700
 
     .timer
+      +sm(margin-bottom, 25px)
+
       h6
         font-size: 17px
         font-style: italic
@@ -110,6 +120,7 @@
     position: relative
     text-align: center
     z-index: 2
+    +xs(padding, 10px)
 
     h4
       font-size: 30px
@@ -127,4 +138,5 @@
       margin-bottom: 5px
       width: 270px
       max-width: none
+      +xs(margin-bottom, 15px)
 

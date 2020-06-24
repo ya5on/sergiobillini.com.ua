@@ -1,6 +1,6 @@
 // HEADER-----------------------------
 .header
-    background: url(/app/img/header/main-bg.png) no-repeat top
+    background: url(/app/img/header/main-bg.png) no-repeat center
     background-size: cover
     position: relative
     z-index: 1
@@ -16,7 +16,7 @@
         position: relative
         z-index: 10
         +sm(z-index, 0)
-        +xs(margin-bottom, 0)
+        +sm(position, initial)
         
     &__left
         +size(6)
@@ -26,8 +26,6 @@
         p
             font-size: 16px
             margin-left: 125px
-            +lg(font-size, 14px)
-            +lg(margin-left, 15px)
             +sm(display, none)
 
     .logo
@@ -35,7 +33,7 @@
         top: 0
         left: 0
         height: 128px
-        +xs(height, 80px)
+        +md(height, 70px)
 
     &__right
         +size(6)
@@ -43,7 +41,6 @@
         display: flex
         justify-content: flex-end
         align-items: center
-
 
         .phone
             color: #000
@@ -56,13 +53,11 @@
             color: #000
             border: 1px solid #000
             background: transparent
+            +sm(display, none)
 
             &:hover
                 background: #000
                 color: #fff
-
-
-
 
     &__content
         display: flex   
@@ -71,7 +66,6 @@
         margin-top: 100px
         position: relative
         z-index: 1
-        +xs(margin-top, 15px)
         
     &__text
         +size(10)
@@ -84,12 +78,13 @@
         font-weight: 500
         +sm(line-height, 30px)
 
+        br
+            +md(display, none)
+
 
     &__subtitle
         margin-top: 39px
         margin-bottom: 47px
-        +xs(margin-top, 10px)
-        +xs(margin-bottom, 23px)
 
     &__list
 
@@ -139,10 +134,9 @@
 
         .mob-logo
             position: absolute
-            top: 10%
             left: 50%
-            transform: translateX(-50%)
-            height: 50px
+            top: 50%
+            transform: translate(-50%, -50%)
 
             @media (min-width: 768px)
                 display: none
@@ -161,9 +155,6 @@
             transform: translateX(-50%)
             width: 100%
 
-            a
-                color: $main-color
-
             @media (min-width: 768px)
                 display: none
 
@@ -174,8 +165,6 @@
             +sm(color, #fff)
             +sm(font-size, 26px)
 
-            &:hover
-                color: $main-color
 
     .icon-menu
         display: block
@@ -186,7 +175,7 @@
         height: 26px
         cursor: pointer
         z-index: 999
-        +xs(top, -50px)
+        +xs(top, -80px)
         +xs(right, 4px)
 
         @media (min-width: 768px)
@@ -235,7 +224,6 @@
             border: none
             margin-bottom: 13px
             +xs(font-size, 14px)
-            +xs(line-height, 46px)
             +xs(height, 50px)
 
     &__people
@@ -248,54 +236,5 @@
         +lg(right, 0)
 
 
-// RECTANGLES
-.rec-545
-    position: absolute
-    top: 115px
-    left: -8px
-    z-index: -1
-    +lg(display, none)
-
-.rec-546
-    position: absolute
-    bottom: 80px
-    left: -7px
-    z-index: -1
-    +lg(display, none)
-
-.rec-547
-    position: absolute
-    bottom: 85px
-    left: 48%
-    z-index: -1
-    +lg(display, none)
-
-.rec-548
-    position: absolute
-    top: 110px
-    left: 52%
-    z-index: -1
-    +lg(display, none)
-
-.rec-549
-    position: absolute
-    bottom: 122px
-    right: 26.3%
-    z-index: -1
-    +lg(display, none)
-
-.rec-550
-    position: absolute
-    top: 0
-    right: 110px
-    z-index: -1
-    +lg(display, none)
-
-.rec-551
-    position: absolute
-    top: 25px
-    right: 0
-    z-index: -1
-    +lg(display, none)
 
 // END HEADER-----------------------------

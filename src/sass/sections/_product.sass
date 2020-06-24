@@ -21,6 +21,8 @@
     background: 0 0
     margin: 5px
     transition: all .4s
+    +xs(font-size, 12px)
+
     &:hover
       background: #000
       color: #fff
@@ -41,14 +43,13 @@
     &:last-of-type
       margin-bottom: 100px
 
-
     h4
       color: #000
       margin-top: 40px
       margin-bottom: 7px
       font-weight: 700
-      +xs(margin-top, 60px)
-      +xs(margin-bottom, 20px)
+      +xs(margin-top, 0)
+      +xs(margin-bottom, 0)
       +sm(font-size, 22px)
 
     p
@@ -89,6 +90,7 @@
       img
         margin: -50px 10px 0
         border-radius: 10px
+        +xs(margin, 0)
 
 
     .button-prev,

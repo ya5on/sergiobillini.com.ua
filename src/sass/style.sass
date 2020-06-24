@@ -37,6 +37,10 @@ h2
   text-align: center
   font-weight: 700
   +sm(font-size, 22px)
+  +sm(line-height, 25px)
+
+  br
+    +md(display, none)
 
 h3 
   font-size: 24px
@@ -56,6 +60,8 @@ img
 
 .container
   +wrapper
+  +md(padding-left, 35px)
+  +md(padding-right, 35px)
 
 .btn
     text-align: center
@@ -74,7 +80,7 @@ img
 .flex-center
   justify-content: center
 .reverse
-  +sm(flex-direction, column-reverse)
+  +md(flex-direction, column-reverse)
 
 .hidden
   display: none

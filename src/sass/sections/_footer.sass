@@ -1,9 +1,12 @@
 .footer
   height: 650px
+  +sm(display, flex)
+  +sm(flex-direction, column)
 
   &__map
+    +col
+    +size(12)
     position: relative
-    width: 100%
     height: 0
     margin: auto
     z-index: 1
@@ -17,6 +20,7 @@
       left: 0
       z-index: 2
       background-color: rgba(0,0,0,.8)
+      +sm(display, none)
 
 
   &__title
@@ -25,14 +29,18 @@
     line-height: 1
     margin-bottom: 35px
     +sm(margin-bottom, 15px)
+    +sm(color, #000)
 
   &__contacts
+    +col
+    +size(3)
+    +size-sm(12)
     flex-direction: column
     position: relative
     z-index: 2
     left: 19%
-    +col
-    +size(3)
+    +sm(left, 2%)
+
 
   &__text
     display: flex
@@ -41,6 +49,7 @@
     color: #fff
     line-height: 24px
     height: 650px
+    +sm(color, #000)
 
     p
       margin-bottom: 25px
@@ -52,6 +61,7 @@
     a
       color: #fff
       display: block
+      +sm(color, #000)
 
 
   &__tel

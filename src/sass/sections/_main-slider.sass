@@ -53,15 +53,21 @@
         height: 50px
         top: 50%
         cursor: pointer
-        
+        +lg(top, auto)
+        +lg(bottom, -70px)
+
     .swiper-button-prev-main
         background: url(/app/img/slider-buttons/prev.png) no-repeat
         left: 0
+        +lg(left, 40%)
+        +sm(left, 30%)
 
     .swiper-button-next-main
         background: url(/app/img/slider-buttons/next.png) no-repeat
         right: 0
-        
+        +lg(right, 40%)
+        +sm(right, 30%)
+
     .swiper-button-disabled
         filter: opacity(25%)
 
@@ -70,6 +76,8 @@
 
         img
             height: 100%
+            +md(margin, 0 auto)
+            +md(height, auto)
 
 
 

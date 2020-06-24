@@ -1,12 +1,14 @@
 .video
   position: relative
   margin-bottom: 145px
+  +sm(margin-bottom, 10px)
 
   img
     position: absolute
     right: 0
     top: 20%
     z-index: -1
+    +md(opacity, .5)
 
   h2
     margin-top: 107px
@@ -25,7 +27,7 @@
   &__text
     +col
     +size(5)
-    +size-sm(12)
+    +size-md(12)
     color: #000
     position: relative
 
@@ -38,15 +40,25 @@
       +md(font-size, 14px)
       +md(line-height, 22px)
 
+
   &__box
     +col
     +size(7)
-    +size-sm(12)
+    +size-md(12)
     height: 470px
+    +lg(display, flex)
+    +sm(height, 350px)
 
     iframe
       background-color: #F3F3F3
       padding: 14px
       box-shadow: 0 0 50px rgba(0,0,0,.3)
+
+      //+md(background-color, none)
+      +md(padding, 4px)
+      +md(background-color, transparent)
+      +md(box-shadow, 0 0 10px rgba(0,0,0,.3))
+      +sm(padding, 0)
+      +sm(box-shadow, none)
 
 

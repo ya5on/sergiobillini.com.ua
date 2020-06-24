@@ -8,7 +8,9 @@
     background: linear-gradient(to right, #4C4C4C, #000000)
     z-index: 1
     +sm(padding, 35px 65px)
-    +xs(padding, 10px)
+    +md(max-width, 270px)
+    +md(margin, 0 auto)
+    +xs(padding, 15px 35px)
 
     h4
       color: #fff
@@ -26,6 +28,10 @@
     top: -100px
     right: -210px
     overflow: hidden
+    +lg(display, none)
+
+    @media screen and (max-width: 1600px)
+      right: 0
 
 
   &__content
@@ -34,7 +40,7 @@
     justify-content: space-between
     margin-top: 40px
     margin-bottom: 8px
-    +lg(flex-direction, column)
+    +md(flex-direction, column)
 
     .button
       width: 170px
@@ -44,8 +50,10 @@
       display: inline-block
       border: none
       +lg(margin-bottom, 20px)
+      +lg(margin-right, 5px)
       +xs(font-size, 16px)
-      +xs(width, 100%)
+      +md(width, 100%)
+
 
       &:hover
         background: #712632
