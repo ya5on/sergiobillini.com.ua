@@ -25,6 +25,8 @@
     position: relative
     text-align: center
     color: #fff
+    +sm(max-width, 235px)
+    +sm(padding, 40px)
 
     h4
         font-size: 30px
@@ -52,12 +54,11 @@
             cursor: pointer
             color: #000
             margin-bottom: 10px
-            text-indent: 25px
+            text-indent: 28px
             +lg(font-size, 14px)
-            +lg(height, 45px)
-            +md(height, 35px)
             +md(margin, 5px)
             +md(font-size, 12px)
+            +sm(margin-bottom, 10px)
 
         .button
             width: 100%
@@ -68,8 +69,6 @@
             line-height: 50px
             border: 2px solid #fff
             +md(font-size, 14px)
-            +md(height, 40px)
-            +md(line-height, 36px)
 
         .btn-red
             border: none

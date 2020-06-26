@@ -1,10 +1,32 @@
 // HEADER-----------------------------
 .header
-    background: url(/app/img/header/main-bg.png) no-repeat center
-    background-size: cover
     position: relative
     z-index: 1
     padding-bottom: 150px
+    +sm(background, url(/app/img/header/main-bg.png) no-repeat center)
+    +sm(background-size, cover)
+
+    .video-container
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        +sm(display, none)
+
+        .mask
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            opacity: .5
+
+        video
+            width: 100%
+            height: 90vh
+            object-fit: cover
+            position: relative
 
     &__top
         display: flex
@@ -14,7 +36,7 @@
         padding-top: 5px
         margin-bottom: 28px
         position: relative
-        z-index: 10
+        z-index: 3
         +sm(z-index, 0)
         +sm(position, initial)
         
@@ -225,6 +247,7 @@
             margin-bottom: 13px
             +xs(font-size, 14px)
             +xs(height, 50px)
+            z-index: 0
 
     &__people
         position: absolute

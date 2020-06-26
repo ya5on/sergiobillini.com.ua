@@ -3,8 +3,7 @@
   h2
     padding-bottom: 23px
     color: #000
-
-    +md(padding-bottom, 50px)
+    +md(padding-bottom, 15px)
     +sm(line-height, 20px)
 
   .tabs
@@ -12,6 +11,7 @@
     justify-content: center
     transition: all .5s
     margin-bottom: 50px
+    +sm(margin-bottom, 20px)
 
   .button
     height: 55px
@@ -39,9 +39,13 @@
     +size(12)
     position: relative
     margin-bottom: 125px
+    +sm(margin-left, 0)
+    +sm(margin-right, 0)
+    +sm(width, 100%)
+    +sm(margin-bottom, 80px)
 
     &:last-of-type
-      margin-bottom: 100px
+      margin-bottom: 165px
 
     h4
       color: #000
@@ -50,10 +54,11 @@
       font-weight: 700
       +xs(margin-top, 0)
       +xs(margin-bottom, 0)
-      +sm(font-size, 22px)
+      +sm(font-size, 15px)
 
     p
       margin-bottom: 20px
+      +sm(font-size, 14px)
 
     .button
       font-size: 18px
@@ -64,6 +69,10 @@
       max-width: 270px
       margin-bottom: 35px
       border-radius: 10px
+      +sm(width, 90%)
+      +sm(height, 45px)
+      +sm(line-height, 45px)
+      +sm(margin-bottom, 15px)
 
     .swiper-box
       margin-left: auto
@@ -73,7 +82,7 @@
       z-index: 1
       overflow: hidden
       padding: 15px
-
+      +sm(padding, 0)
 
     .swiper-slide
       display: flex
@@ -85,7 +94,8 @@
       background-color: #F6F6F6
       border-radius: 10px
       box-shadow: 0 0 15px rgba(0,0,0,.5)
-
+      +sm(box-shadow, none)
+      +sm(border, 1px solid grey)
 
       img
         margin: -50px 10px 0
@@ -123,4 +133,5 @@
   bottom: -82px
   left: 50%
   transform: translateX(-50%)
+  +sm(bottom, -70px)
 

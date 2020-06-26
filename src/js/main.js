@@ -52,6 +52,40 @@ $(document).ready(function () {
         $('.product__items').removeClass('active').filter(sel).addClass('active');
     });
 
+    //Adv-slider
+    let productsAdv = new Swiper('.swiper-container-adv', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 3,
+            },
+            960: {
+                slidesPerView: 3,
+            }
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-adv',
+            prevEl: '.swiper-button-prev-adv',
+        },
+    });
+
     //main-slider
     let mainSlider = new Swiper('.swiper-container-main', {
         // Optional parameters
@@ -96,11 +130,11 @@ $(document).ready(function () {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 640px
             740: {
@@ -128,11 +162,11 @@ $(document).ready(function () {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 640px
             740: {
@@ -157,11 +191,11 @@ $(document).ready(function () {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 640px
             740: {
@@ -186,11 +220,11 @@ $(document).ready(function () {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             // when window width is >= 640px
             740: {
@@ -206,51 +240,75 @@ $(document).ready(function () {
         },
     });
 
-
-
-    // Params
-    let sliderSelector = '.swiper-container-reviews',
-        options = {
-            init: false,
-            loop: true,
-            speed:800,
-            slidesPerView: 2, // or 'auto'
-            // spaceBetween: 10,
-            centeredSlides : true,
-            effect: 'coverflow', // 'cube', 'fade', 'coverflow',
-            coverflowEffect: {
-                rotate: 50, // Slide rotate in degrees
-                stretch: 0, // Stretch space between slides (in px)
-                depth: 100, // Depth offset in px (slides translate in Z axis)
-                modifier: 1, // Effect multipler
-                slideShadows : true, // Enables slides shadows
+    let swiper = new Swiper('.swiper-container-reviews', {
+        effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
             },
-            grabCursor: true,
-            parallax: true,
-            pagination: {
-                el: '.swiper-pagination-reviews',
-                clickable: true,
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
             },
-            navigation: {
-                nextEl: '.swiper-button-next-reviews',
-                prevEl: '.swiper-button-prev-reviews',
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 1,
             },
-            breakpoints: {
-                1023: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
-                }
-            },
-            // Events
-            on: {
-                imagesReady: function(){
-                    this.el.classList.remove('loading');
-                }
+            960: {
+                slidesPerView: 2,
             }
-        };
-    let mySwiper = new Swiper(sliderSelector, options);
+        },
 
-// Initialize slider
-    mySwiper.init();
+        navigation: {
+            nextEl: '.swiper-button-next-reviews',
+            prevEl: '.swiper-button-prev-reviews',
+        },
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 60,
+            modifier: 1,
+            slideShadows : false,
+        }
+    });
+
+    //Order-slider
+    let productsOrder = new Swiper('.swiper-container-order', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 4,
+            },
+            960: {
+                slidesPerView: 4,
+            }
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-order',
+            prevEl: '.swiper-button-prev-order',
+        },
+    });
 
 });

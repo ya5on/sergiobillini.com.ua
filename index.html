@@ -16,6 +16,11 @@
 <div class="form-container hidden"></div>
 <!-- HEADER -->
 <header class="header">
+    <div class="video-container">
+        <div class="mask">
+            <video src="/app/img/video/Sergio%20Billini-test.mp4" autoplay="" loop="" muted="" playsinline=""></video>
+        </div>
+    </div>
     <div class="container">
         <div class="header__top">
             <div class="header__left">
@@ -83,7 +88,9 @@
             с ТМ Sergio Billini и Mida</h2>
         <div class="video__content">
             <div class="video__text">
-                <p>Многие годы мы являемся официальными представителями самой известной в Украине фабрики MIDA. Благодаря многолетнему опыту мы создали компанию Sergio Billini, которая осуществляет оптовую торговлю обувью по всей Украине. </p>
+                <p>Многие годы мы являемся официальными представителями самой известной в Украине фабрики MIDA.
+                    Благодаря многолетнему опыту мы создали компанию Sergio Billini, которая осуществляет оптовую
+                    торговлю обувью по всей Украине. </p>
                 <p>Наша команда формирует каждый сезон новый ассортимент из самых актуальных и высококачественных
                     моделей, которые отшиваются под брендом Sergio Billini лучшими фабриками Украины и Китая. Новейшие
                     технологии создания обуви делают ее комфортной и практичной, при этом сохраняя элегантность, красоту
@@ -92,12 +99,12 @@
             <div class="video__box">
                 <iframe width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
-                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Y8Wp3dafaMQ?autoplay=1><img src=https://img.youtube.com/vi/Y8Wp3dafaMQ/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+                        src="https://www.youtube.com/embed/zQKxA8ywp40"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/zQKxA8ywp40?autoplay=1><img src=/app/img/video/video-title.jpg alt=''><span>▶</span></a>"
                         frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;start=2"
                         allowfullscreen
-                        title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition">
+                        title="">
                 </iframe>
             </div>
         </div>
@@ -107,25 +114,35 @@
 <section class="advantages">
     <div class="container">
         <h2>Преимуществами нашей компании уже воспользовались<br> более 1000 оптовых клиентов по всей Украине:</h2>
-        <div class="advantages__items">
-            <div class="advantages__item">
-                <img data-src="/app/img/advantages/1.jpg" alt="" class="lazyload">
-                <h3>Каждый сезон добавляем<br> более 1000 новых актуальных моделей </h3>
-                <p>Мы следим за тем, чтобы новые модели обуви регулярно обновлялись, и Вы получали самый актуальную и
-                    ходовую обувь для своего магазина. </p>
+        <div class="advantages__slider">
+            <div class="swiper-container-adv">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide advantages__item">
+                        <img data-src="/app/img/advantages/1.jpg" alt="" class="lazyload">
+                        <h3>Каждый сезон добавляем<br> более 1000 новых актуальных моделей </h3>
+                        <p>Мы следим за тем, чтобы новые модели обуви регулярно обновлялись, и Вы получали самый актуальную и
+                            ходовую обувь для своего магазина. </p>
+                    </div>
+                    <div class="swiper-slide advantages__item">
+                        <img src="/app/img/advantages/2.jpg" alt="" class="lazyload">
+                        <h3>Более 15 000 пар обуви
+                            в наличие у нас на складе</h3>
+                        <p>Большое количество пар обуви на нашем складе позволит Вам в любой момент сформировать необходимый
+                            заказ.</p>
+                    </div>
+                    <div class="swiper-slide advantages__item">
+                        <img src="/app/img/advantages/3.jpg" alt="" class="lazyload">
+                        <h3>Предзаказ на следующий <br> сезон со скидкой 5% </h3>
+                        <p>Вы сможете сформировать свой ассортимент заранее и также подобрать эксклюзивный товар для своего
+                            магазина, который будет только у Вас.</p>
+                    </div>
+                </div>
             </div>
-            <div class="advantages__item">
-                <img src="/app/img/advantages/2.jpg" alt="" class="lazyload">
-                <h3>Более 15 000 пар обуви
-                    в наличие у нас на складе</h3>
-                <p>Большое количество пар обуви на нашем складе позволит Вам в любой момент сформировать необходимый
-                    заказ.</p>
-            </div>
-            <div class="advantages__item">
-                <img src="/app/img/advantages/3.jpg" alt="" class="lazyload">
-                <h3>Предзаказ на следующий <br> сезон со скидкой 5% </h3>
-                <p>Вы сможете сформировать свой ассортимент заранее и также подобрать эксклюзивный товар для своего
-                    магазина, который будет только у Вас.</p>
+            <div class="slider__btn">
+                <div class="swiper-button-prev-adv"></div>
+                <div class="swiper-button-next-adv"></div>
             </div>
         </div>
     </div>
@@ -194,31 +211,31 @@
                             <img data-src="/app/img/products/womens/slider-1/2.jpg" alt="2" class="lazyload">
                             <h4>Мокасины</h4>
                             <p>и еще более 40 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/3.jpg" alt="3" class="lazyload">
                             <h4>Кроссовки, кеды</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/1.jpg" alt="1" class="lazyload">
                             <h4>Ботинки</h4>
                             <p>и еще более 50 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/2.jpg" alt="2" class="lazyload">
                             <h4>Ботильоны</h4>
                             <p>и еще более 40 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/3.jpg" alt="3" class="lazyload">
                             <h4>Кроссовки, кеды</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                     </div>
                 </div>
@@ -235,37 +252,37 @@
                             <img data-src="/app/img/products/womens/slider-2/1.jpg" alt="1" class="lazyload">
                             <h4>Туфли</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/2.jpg" alt="2" class="lazyload">
                             <h4>Балетки</h4>
                             <p>и еще более 10 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/3.jpg" alt="3" class="lazyload">
                             <h4>Кроссовки, кеды</h4>
                             <p>и еще более 20 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/1.jpg" alt="1" class="lazyload">
                             <h4>Ботинки и сапоги</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/2.jpg" alt="2" class="lazyload">
                             <h4>Туфли</h4>
                             <p>и еще более 10 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/3.jpg" alt="3" class="lazyload">
                             <h4>Балетки</h4>
                             <p>и еще более 20 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                     </div>
                 </div>
@@ -284,37 +301,37 @@
                             <img data-src="/app/img/products/womens/slider-1/1.jpg" alt="1" class="lazyload">
                             <h4>Ботинки</h4>
                             <p>и еще более 50 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/2.jpg" alt="2" class="lazyload">
                             <h4>Ботильоны</h4>
                             <p>и еще более 40 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/3.jpg" alt="3" class="lazyload">
                             <h4>Кроссовки, кеды</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/1.jpg" alt="1" class="lazyload">
                             <h4>Ботинки</h4>
                             <p>и еще более 50 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/2.jpg" alt="2" class="lazyload">
                             <h4>Ботильоны</h4>
                             <p>и еще более 40 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-1/3.jpg" alt="3" class="lazyload">
                             <h4>Кроссовки, кеды</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                     </div>
                 </div>
@@ -331,37 +348,37 @@
                             <img data-src="/app/img/products/womens/slider-2/1.jpg" alt="1" class="lazyload">
                             <h4>Сапоги</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/2.jpg" alt="2" class="lazyload">
                             <h4>Туфли</h4>
                             <p>и еще более 10 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/3.jpg" alt="3" class="lazyload">
                             <h4>Балетки</h4>
                             <p>и еще более 20 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/1.jpg" alt="1" class="lazyload">
                             <h4>Сапоги</h4>
                             <p>и еще более 30 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/2.jpg" alt="2" class="lazyload">
                             <h4>Туфли</h4>
                             <p>и еще более 10 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                         <div class="swiper-slide">
                             <img data-src="/app/img/products/womens/slider-2/3.jpg" alt="3" class="lazyload">
                             <h4>Балетки</h4>
                             <p>и еще более 20 моделей обуви...</p>
-                            <button class="button btn-black">Узнать стоимость</button>
+                            <button class="button btn-black btn-cost">Узнать стоимость</button>
                         </div>
                     </div>
                 </div>
@@ -403,7 +420,8 @@
             </div>
             <div class="about__text">
                 <h3>Бесплатная консультация по выбору <br> ассортимента товара</h3>
-                <p>Наши специалисты, учитывая особенности Вашей торговой точки, посоветуют актуальные модели текущего сезона и помогут подобрать самый продаваемый товар.</p>
+                <p>Наши специалисты, учитывая особенности Вашей торговой точки, посоветуют актуальные модели текущего
+                    сезона и помогут подобрать самый продаваемый товар.</p>
                 <button class="button btn-red btn-getConsult">Получить консультацию</button>
             </div>
         </div>
@@ -437,7 +455,8 @@
             <div class="about__text">
                 <h3>Бессрочное гарантийное <br> обслуживание</h3>
                 <p>Если Ваши клиенты обратятся к Вам с вопросом
-                    по гарантийному случаю, Вы можете отправить обувь нам, и мы заменим либо исправим то, что необходимо.</p>
+                    по гарантийному случаю, Вы можете отправить обувь нам, и мы заменим либо исправим то, что
+                    необходимо.</p>
             </div>
             <div class="about__picture">
                 <img data-src="/app/img/about/garanty.png" alt="box" class="lazyload">
@@ -456,7 +475,7 @@
                 <p>Получите в<span>подарок сертификат</span>
                     для покупки обуви оптом
                     <span>на сумму 5 000 грн</span>
-                    </p>
+                </p>
                 <div class="timer">
                     <h6>До конца акции осталось:</h6>
                     <ul>
@@ -469,7 +488,8 @@
             </div>
             <div class="stock__form">
                 <h4>Заполните форму,</h4>
-                <p>чтобы получить в подарок сертификат для покупки обуви оптом на сумму 5000 грн на Вашу почту в течение 15 минут</p>
+                <p>чтобы получить в подарок сертификат для покупки обуви оптом на сумму 5000 грн на Вашу почту в течение
+                    15 минут</p>
                 <form class="stock__form--content" id="" method="post" action="mail.php">
                     <input type="hidden" name="whatform" value="Форма - Получить фотокаталог продукции в Viber"/>
                     <input class="button" type="text" name="name" placeholder="Ваше имя" required="required">
@@ -481,7 +501,7 @@
         </div>
     </div>
     <img class="stock__img--1 lazyload" data-src="/app/img/stock/1.png" alt="">
-    <img class="stock__img--2 lazyload" data-src="/app/img/stock/cert-left.png" alt="" >
+    <img class="stock__img--2 lazyload" data-src="/app/img/stock/cert-left.png" alt="">
     <img class="stock__img--3 lazyload" data-src="/app/img/stock/cert-right.png" alt="">
 </section>
 <!--//STOCK-->
@@ -490,52 +510,33 @@
 <section class="reviews">
     <h2>Отзывы <span>наших клиентов</span></h2>
     <div class="container">
-        <section class="swiper-container-reviews loading">
+        <div class="swiper-container-reviews">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
-                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
-                    <div class="content">
-                        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Жанна Травкина</p>
-                        <span class="caption" data-swiper-parallax="-20%">Статуя Юпитера в Эрмитаже — колоссальная скульптура верховного античного бога, созданная неизвестным римским мастером в конце I века н. э. Она является одним из самых известных экспонатов музея. Статуя Юпитера — значимый памятник эпохи Фла</span>
-                    </div>
+                <div class="swiper-slide">
+                    <p class="title">Радецкий Николай</p>
+                    <p class="text">Сотрудничество с ТМ "Sergio Billini", "Мида" и лично с Сергеем и Людмилой Пройдаковыми стали основой для нашего успеха. Плодотворное сотрудничество уже более 18 лет приносит нам свои результаты. За это время был создан отлаженный механизм сотрудничества, а основным достижением стали тысячи довольных клиентов, которые приобрели свою пару качественной кожаной обуви.
+                        Времена были разные, мы вместе пережили много инноваций, изменений и потрясений. Дальше - больше, масштабнее, инновационнее!
+                        Мы очень ценим нашу совместную работу с Людмилой и Сергеем, за это время у нас сложились не только коммерческие, но и теплые дружеские отношения.
+                    </p>
                 </div>
-                <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg)">
-                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg" class="entity-img" />
-                    <div class="content">
-                        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Alexis Berry</p>
-                        <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                    </div>
+                <div class="swiper-slide">
+                    <p class="title">Лескова Любовь</p>
+                    <p class="text">Сколько работаем (более двадцати лет), всегда испытываю чувство благодарности, что судьба свела с порядочными людьми, хорошими специалистами и надежными партнерами. Надеюсь на дальнейшее сотрудничество. Крепкого здоровья и преодоления всех препятствий, вдохновения и успехов!</p>
                 </div>
-                <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s)">
-                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s" class="entity-img" />
-                    <div class="content">
-                        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Billie	Pierce</p>
-                        <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                    </div>
+                <div class="swiper-slide">
+                    <p class="title">Колесников Александр</p>
+                    <p class="text">Не первый год работаем с компаниями «Sergio Bilini» и «Мида», качество всегда на высоте, хороший и разнообразный модельный ряд на любой вкус! Очень нравится подход к работе менеджеров, всегда оперативная доставка! Всем советуем эти компании к сотрудничеству!</p>
                 </div>
-                <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLVUpEems2ZXpHYVk)">
-                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLVUpEems2ZXpHYVk" class="entity-img" />
-                    <div class="content">
-                        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Trevor	Copeland</p>
-                        <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                    </div>
-                </div>
-                <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM)">
-                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM" class="entity-img" />
-                    <div class="content">
-                        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Bernadette	Newman</p>
-                        <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                    </div>
+                <div class="swiper-slide">
+                    <p class="title">Лазовский Олег</p>
+                    <p class="text">Этого поставщика выбрал давно и очень доволен. У меня появилось свободное время. Ведь больше не нужно иметь дело с различными производителями. Это очень удобно сотрудничать с одной компанией, которая занимается оптовой торговлей обуви, при этом обувь у них от различных фабрик Украины и не только. И мне больше не нужно помнить всех, достаточно знать только одних «Sergio Billini». Вы самые лучшие!</p>
                 </div>
             </div>
-
-            <!-- If we need navigation buttons -->
             <div class="slider__btn-rew">
                 <div class="swiper-button-prev-reviews"></div>
                 <div class="swiper-button-next-reviews"></div>
             </div>
-        </section>
-
+        </div>
     </div>
 </section>
 <!--//reviews-->
@@ -544,67 +545,75 @@
 <section class="order">
     <div class="container">
         <h2>Сделать у нас заказ очень просто:</h2>
-        <div class="order__content">
-            <div class="order__item">
-                <div class="order__item--img">
-                    <img data-src="/app/img/order/1.jpg" alt="4" class="lazyload">
-                    <span class="order__num">1</span>
+        <div class="order__slider">
+            <div class="swiper-container-order">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="order__img">
+                            <img data-src="/app/img/order/1.jpg" alt="4" class="lazyload">
+                            <span class="order__num">1</span>
+                        </div>
+                        <p class="order__text">Оставляйте заявку, и наш специалист свяжется с Вами
+                            в течение 15 мин, чтобы проконсультировать Вас.</p>
+                        <button class="button btn-black btn-orderForm">Оставить заявку</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="order__img">
+                            <img class="order__absolute lazyload" data-src="/app/img/order/2-2.png" alt="4">
+                            <span class="order__num">2</span>
+                        </div>
+                        <p class="order__text">Мы подберем самые ходовые позиции для Вас из каталога.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="order__img">
+                            <img data-src="/app/img/order/3.jpg" alt="4" class="lazyload">
+                            <span class="order__num">3</span>
+                        </div>
+                        <p class="order__text">Вы подтверждаете заказ
+                            и вносите оплату.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="order__img">
+                            <img data-src="/app/img/order/4.jpg" alt="4" class="lazyload">
+                            <span class="order__num">4</span>
+                        </div>
+                        <p class="order__text">Мы отправляем Ваш заказ любой удобной для Вас службой доставки</p>
+                    </div>
                 </div>
-                <p class="order__text">Оставляйте заявку, и наш специалист свяжется с Вами
-                    в течение 15 мин, чтобы проконсультировать Вас.</p>
-                <button class="button btn-black btn-orderForm">Оставить заявку</button>
             </div>
-            <div class="order__item">
-                <div class="order__item--img">
-                    <img class="order__item--absolute lazyload" data-src="/app/img/order/2-2.png" alt="4">
-                    <span class="order__num">2</span>
-                </div>
-                <p class="order__text">Мы подберем самые ходовые позиции для Вас из каталога.</p>
+            <div class="slider__btn">
+                <div class="swiper-button-prev-order"></div>
+                <div class="swiper-button-next-order"></div>
             </div>
-            <div class="order__item">
-                <div class="order__item--img">
-                    <img data-src="/app/img/order/3.jpg" alt="4" class="lazyload">
-                    <span class="order__num">3</span>
-                </div>
-                <p class="order__text">Вы подтверждаете заказ
-                    и вносите оплату.</p>
-            </div>
-            <div class="order__item">
-                <div class="order__item--img">
-                    <img data-src="/app/img/order/4.jpg" alt="4" class="lazyload">
-                    <span class="order__num">4</span>
-                </div>
-                <p class="order__text">Мы отправляем Ваш заказ любой удобной для Вас службой доставки</p>
-            </div>
-
         </div>
     </div>
-<!--    <img class="order__man" src="/app/img/order/man.png" alt="man">-->
+    <!--    <img class="order__man" src="/app/img/order/man.png" alt="man">-->
 </section>
 <!--//ORDER-->
 
 <!--FOOTER-->
 <footer class="footer" id="contacts">
     <div class="footer__map">
-        <iframe style="border: 0;" tabindex="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10165.701733259684!2d30.66769563327559!3d50.43317586343737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf55e4c58c13%3A0x3cc28a0665a18ee!2z0JzQvtGC0L4g0KHQotCeIDEwNSBHYXJhZ2U!5e0!3m2!1sru!2sus!4v1585133056023!5m2!1sru!2sus" width="100%" height="650" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false"></iframe>
+        <img src="" alt="">
     </div>
-        <div class="footer__contacts">
-            <div class="footer__text">
-                <h2 class="footer__title">
-                    Наши <br> контакты
-                </h2>
-                <p>г. Киев, <br>
-                    ул. З. Зидана, 75</p>
-                <div>
-                    <a class="footer__tel" href="tel:+380955157788">+38 095 515-77-88</a>
-                    <a class="footer__tel" href="mailto:email@gmail.com">email@gmail.com</a>
-                </div>
-                <p><span>Остались вопросы? <br></span>
-                    Наш специалист ответит на них <br>
-                    в течение 15 минут.</p>
-                <button class="button btn-red btn-questions">Задать вопрос</button>
+    <div class="footer__contacts">
+        <div class="footer__text">
+            <h2 class="footer__title">
+                Наши <br> контакты
+            </h2>
+            <p>м.Чернівці <br> вулиця Калинівська, 13Б <br>ТЦ "Добробут"</p>
+            <div>
+                <a class="footer__tel" href="tel:+380955157788">+38 095 515-77-88</a>
+                <a class="footer__tel" href="mailto:email@gmail.com">email@gmail.com</a>
             </div>
+            <p><span>Остались вопросы? <br></span>
+                Наш специалист ответит на них <br>
+                в течение 15 минут.</p>
+            <button class="button btn-red btn-questions">Задать вопрос</button>
         </div>
+    </div>
 </footer>
 <!--//FOOTER-->
 

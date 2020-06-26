@@ -1,5 +1,6 @@
 .reviews
   overflow: hidden
+  padding-bottom: 50px
 
   h2
     padding-top: 60px
@@ -8,39 +9,31 @@
 
   .swiper-container-reviews
     width: 100%
-    height: 20vw
-    transition: opacity 0.6s ease
-    padding-bottom: 100px
+    padding-top: 50px
+    padding-bottom: 50px
 
-  .swiper-container-reviews.loading
-    opacity: 0
-    visibility: hidden
 
-  .swiper-slide
-    background-position: center
-    background-size: cover
+    .swiper-slide
+      width: 100%
+      text-align: center
+      filter: blur(2px)
 
-  .swiper-slide .entity-img
-    display: none
 
-  .swiper-slide .content
-    position: absolute
-    top: 40%
-    left: 0
-    width: 50%
-    padding-left: 5%
-    color: #fff
+      .title
+        font-size: 18px
+        font-weight: 700
+        padding-bottom: 30px
 
-  .swiper-slide .content .title
-    font-size: 2.6em
-    font-weight: bold
-    margin-bottom: 30px
+      .text
+        font-size: 18px
+        font-weight: 500
+        font-style: italic
 
-  .swiper-slide .content .caption
-    display: block
-    font-size: 13px
-    line-height: 1.4
-    +sm(display, none)
+    .swiper-slide-active
+      filter: none
+
+
+
 
   .swiper-button-prev-reviews,
   .swiper-button-next-reviews
@@ -68,7 +61,7 @@
     align-items: center
     justify-content: space-between
     position: absolute
-    bottom: 0
+    bottom: -35px
     left: 50%
     transform: translateX(-50%)
 

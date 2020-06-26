@@ -6,34 +6,24 @@
   h2
     padding-top: 105px
     padding-bottom: 70px
-    +md(padding-top, 50px)
-    +md(padding-bottom, 50px)
+    +md(padding-top, 15px)
+    +md(padding-bottom, 15px)
 
-  &__content
-    +row-flex
-    justify-content: space-between
+  &__img
     position: relative
+    width: 270px
+    height: 270px
+    background-color: #EDEDED
+    +md(margin, 0 auto)
 
-  &__item
-    +col
-    +size(3)
-    +size-md(12)
-
-    &--img
-      position: relative
-      width: 270px
-      height: 270px
-      background-color: #EDEDED
-      +md(margin, 0 auto)
-
-    &--absolute
+  &__absolute
       position: absolute
       max-width: initial
       top: -5px
       left: -150px
 
   .button
-    +sm(margin-bottom, 30px)
+    +sm(margin-bottom, 0)
 
   &__num
       position: absolute
@@ -49,6 +39,8 @@
     line-height: 28px
     margin-top: 43px
     margin-bottom: 38px
+    +sm(line-height, 20px)
+    +sm(margin, 20px 0)
 
   &__man
     position: absolute
@@ -58,3 +50,58 @@
 
     @media (max-width: 1681px)
       display: none
+
+  &__slider
+    padding-bottom: 100px
+    position: relative
+    +sm(padding-bottom, 70px)
+
+    .swiper-container-order
+
+      max-width: 970px
+
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      list-style: none
+      padding: 0
+      z-index: 1
+      +sm(height, auto)
+
+
+  .slider__btn
+    height: 70px
+    width: 130px
+    display: none
+    align-items: center
+    justify-content: space-between
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    +sm(display, flex)
+
+
+
+    .swiper-button-prev-order,
+    .swiper-button-next-order
+      display: inline-block
+      outline: none
+      width: 50px
+      height: 50px
+      cursor: pointer
+
+    .swiper-button-prev-order
+      background: url(/app/img/slider-buttons/prev.png) no-repeat
+
+    .swiper-button-next-order
+      background: url(/app/img/slider-buttons/next.png) no-repeat
+
+    .swiper-button-disabled
+      filter: opacity(25%)
+
+      img
+        height: 100%
+        +md(margin, 0 auto)
+        +md(height, auto)
